@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.infoPerfilSalud_UserPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#EEEEEE"
+             >
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE" VerticalOptions="Center" Margin="16,0">
+            <Grid>
+
+                <Button Text="Volver" HorizontalOptions="Start"
+                        Background="#EEEEEE" WidthRequest="90" HeightRequest="40"
+                    x:Name="btnVolver" TextColor="Black"
+                    Clicked="btnVolver_Clicked" 
+                        Grid.Row="0" Grid.Column="0">
+                </Button>
+                
+            </Grid>
+            <Label Text="Perfil de salud" TextColor="Black" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" Margin="0,16,0,0"/>
+            <Frame Margin="0,10" CornerRadius="10">
+                <Grid RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label Text="Nombre" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="Name" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+
+                    <Label Text="Apellido" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="Surname" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+
+                    <Label Text="Fecha de nacimiento" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="XX/XX/XXXX" Grid.Row="2" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+
+                    <Label Text="Sexo" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="Sin Definir" Grid.Row="3" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+
+                    <Label Text="Grupo sanguíneo" Grid.Row="4" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="Sin Definir" Grid.Row="4" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <Frame CornerRadius="10">
+                <Grid>
+                    <Label Text="Discapacidad" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="No" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <Frame CornerRadius="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Medicamentos" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                    <Label Text="0" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="16" HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <Button Text="Modificar Datos" FontSize="20" CornerRadius="10"
+                    BackgroundColor="#007FFF" TextColor="Black"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

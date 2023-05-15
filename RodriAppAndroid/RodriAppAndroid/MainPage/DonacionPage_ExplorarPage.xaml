@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.DonacionPage_ExplorarPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#EEEEEE" >
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE" VerticalOptions="Center">
+            <Grid Margin="0,8,0,0">
+
+                <Button Text="Volver" HorizontalOptions="Start" TextColor="Black"
+                        Background="#EEEEEE" WidthRequest="90" HeightRequest="40"
+                    x:Name="btnVolver"
+                    Clicked="btnVolver_Clicked" 
+                        Grid.Row="0" Grid.Column="0">
+                </Button>
+            </Grid>
+            <Label Text="Donacion de organos" HorizontalOptions="Center" FontSize="24" TextColor="Black" FontAttributes="Bold"/>
+            <Frame Margin="10,0" CornerRadius="10">
+                <StackLayout>
+                    <Image Source="donateImage.png" HorizontalOptions="Center" Margin="0,20,0,5" WidthRequest="100" HeightRequest="100"/>
+                    <Label Text="Regístrate como donante de órganos" TextColor="Black" FontAttributes="Bold" FontSize="24"/>
+                    <Label Text="Un solo donante puede salvar hasta ocho vidas. Registrarte no afectará tu atención médica." TextColor="Black" FontSize="20"/>
+                    <Entry Placeholder="Ingrese su grupo sanguineo" PlaceholderColor="#777777" Background="#DDDDDD"/>
+                    <Button Text="Registrarse en Donate Life" CornerRadius="10"
+                            BackgroundColor="#007FFF" TextColor="White"
+                            FontAttributes="Bold" Margin="0,10,0,0" FontSize="16"
+                            x:Name="btnDonate" Clicked="btnDonate_Clicked"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.ExplorarPage"
+             xmlns:translator="clr-namespace:RodriAppAndroid.Extensiones"
+             Title="{translator:Traducciones Explorar}"
+             IconImageSource="explorarImageIcon.png"
+             BackgroundColor="#EEEEEE">
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE" Padding="0,16,0,0" VerticalOptions="Center" Margin="15,0">
+            <Frame CornerRadius="10" Padding="0" Margin="70,0,0,0" HorizontalOptions="End">
+                <StackLayout Orientation="Horizontal" >
+                    <Button Text="Hablar con mi médico" TextColor="Black" TextTransform="None"
+                            BackgroundColor="White" x:Name="gotoTelemecina0" Clicked="gotoTelemecina0_Clicked"/>
+                    <ImageButton Source="medico.png" WidthRequest="40" HeightRequest="30" BackgroundColor="White"
+                                 Margin="-5,0,5,0" x:Name="gotoTelemedicina1" Clicked="gotoTelemedicina1_Clicked"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Interactua en Hearty" FontSize="20" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,5" HorizontalOptions="Center"/>
+
+            <Button  TextColor="Black" Text="¿Dónde estoy?"  BackgroundColor="White" CornerRadius="10"
+                         x:Name="btnDondeEstoy" Clicked="btnDondeEstoy_Clicked" TextTransform="None" FontAttributes="Bold" FontSize="18"/>
+       
+            <Button TextColor="Black" Text="Ayuda/Soporte"  BackgroundColor="White" CornerRadius="10"
+                        x:Name="btnAyuda" Clicked="btnAyuda_Clicked" TextTransform="None" FontAttributes="Bold" FontSize="18"/>
+
+            <Button TextColor="Black" Text="Composición corporal" BackgroundColor="White" CornerRadius="10"
+                    x:Name="btnIMC" Clicked="btnIMC_Clicked" TextTransform="None" FontAttributes="Bold" FontSize="18"/>
+
+            <Button TextColor="Black" Text="Seguimiento de ciclo" BackgroundColor="White" CornerRadius="10"
+                    x:Name="btnCiclo" Clicked="btnCiclo_Clicked" TextTransform="None" FontAttributes="Bold" FontSize="18"/>
+            
+            <Button TextColor="Black" Text="Realizar ECG"  BackgroundColor="White" CornerRadius="10"
+                        x:Name="btnECG" Clicked="btnECG_Clicked" TextTransform="None" FontAttributes="Bold" FontSize="18"/>
+            
+            <Button TextColor="Black" Text="Mi médico"  BackgroundColor="White" CornerRadius="10"
+                        x:Name="MiMedico" Clicked="MiMedico_Clicked" TextTransform="None" FontAttributes="Bold" FontSize="18"/>
+            
+            <Button TextColor="Black" Text="Mis Datos Médicos"  BackgroundColor="White" CornerRadius="10"
+                        TextTransform="None" FontAttributes="Bold" FontSize="18" x:Name="MisDatos" Clicked="MisDatos_Clicked"/>
+            
+            <Button Text="Donación de órganos" CornerRadius="10" TextColor="Black" BackgroundColor="White" TextTransform="None"
+                 FontSize="18" FontAttributes="Bold" x:Name="btnDonacion" Clicked="btnDonacion_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

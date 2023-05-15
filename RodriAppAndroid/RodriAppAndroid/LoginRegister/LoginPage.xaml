@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.LoginPage"
+             xmlns:translator="clr-namespace:RodriAppAndroid.Extensiones"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#4ABFA7">
+    
+    <StackLayout BackgroundColor="#4ABFA7" VerticalOptions="Center" Margin="32,0">
+        <Label Text="{translator:Traducciones Bienvenido a Hearty}" TextColor="Black" FontSize="32"
+               VerticalOptions="Center" HorizontalOptions="Center"
+               FontAttributes="Italic"/>
+        
+        <Label Text="{translator:Traducciones Usuario}" TextColor="Black" FontSize="16"/>
+        <Entry BackgroundColor="White" TextColor="Black" x:Name="txtUsuario"/>
+        
+        <Label Text="{translator:Traducciones Contraseña}" TextColor="Black" FontSize="16"/>
+        <Entry BackgroundColor="White" TextColor="Black" x:Name="txtContraseña"/>
+        
+        <Button Text="Ingresar" TextColor="Black" CornerRadius="10" Margin="0,16,0,0"
+                BackgroundColor="LightCyan" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
+
+        <Button Text="{translator:Traducciones ¿Ha olvidado su contraseña?}" x:Name="OlvidarContra" Clicked="OlvidarContra_Clicked"
+                BackgroundColor="Black" TextColor="White" CornerRadius="10" TextTransform="None"/>
+
+        <Label HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="¿No tiene cuenta? " TextColor="Black"/>
+                    <Span Text="Registrese" TextColor="Black" FontAttributes="Bold" TextDecorations="Underline"/>
+                </FormattedString>
+            </Label.FormattedText>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+</ContentPage>

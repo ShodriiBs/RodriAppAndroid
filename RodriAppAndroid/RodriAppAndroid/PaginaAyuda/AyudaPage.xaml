@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.AyudaPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#4ABFA7">
+    <ScrollView>
+        <StackLayout BackgroundColor="#4ABFA7" VerticalOptions="Center" Margin="30,0">
+            
+            <Frame CornerRadius="10">
+                <StackLayout>
+                    <Label Text="¿En qué podemos ayudarte?" FontSize="24" TextColor="Black" HorizontalTextAlignment="Center"/>
+                    <Entry Placeholder="Asunto" BackgroundColor="#EEEEEE" PlaceholderColor="#888888" 
+                           TextColor="Black" x:Name="Asunto"/>
+                    <Entry Placeholder="Descripción" PlaceholderColor="#888888" TextColor="Black"
+                           BackgroundColor="#EEEEEE" x:Name="Descripcion"/>
+                    <Button Text="Enviar" BackgroundColor="LightBlue" TextColor="Black" CornerRadius="10"
+                            x:Name="btnTextbox" Clicked="btnTextbox_Clicked" Margin="0,10,0,0"/>
+                </StackLayout>
+            </Frame>
+            
+
+            <Label Text="Preguntas frecuentes" TextColor="White" FontSize="24" Margin="0,16,0,0"
+                   TextDecorations="Underline" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Label HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="¿Para qué nos sirve Hearty?" TextColor="Blue"
+                              FontSize="24" FontAttributes="Italic"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapUtil_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

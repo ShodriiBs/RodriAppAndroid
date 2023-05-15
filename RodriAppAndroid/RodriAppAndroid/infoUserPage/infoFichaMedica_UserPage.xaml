@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.infoFichaMedica_UserPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE">
+            <Grid Margin="0,8,0,0">
+
+                <Button Text="Volver" HorizontalOptions="Start" TextColor="Black"
+                        Background="#EEEEEE" WidthRequest="90" HeightRequest="40"
+                    x:Name="btnVolver"
+                    Clicked="btnVolver_Clicked" 
+                        Grid.Row="0" Grid.Column="0">
+                </Button>
+
+                <Button Text="Editar"
+                        HorizontalOptions="End" Background="#EEEEEE" TextColor="Black"
+                        WidthRequest="90" HeightRequest="40"
+                        Grid.Row="0" Grid.Column="1"> 
+                </Button>
+            </Grid>
+            <Label Text="Ficha médica" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" TextColor="Black" Margin="0,8,0,20"/>
+            <Label Text="Información" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="20,0"/>
+            <Frame>
+                <StackLayout>
+                    <Label Text="User Name" FontSize="24" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Years Old" FontSize="16" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="No soy donador de órganos" FontSize="16" FontAttributes="Bold" Margin="0,0,0,20"/>
+                    <Label Text="Grupo sanguíneo" FontSize="20" FontAttributes="Bold"/>
+                    <Label Text="0+" FontSize="16" FontAttributes="Bold" TextColor="Black" Margin="0,0,0,20"/>
+                    <Label Text="Peso" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="XX kg" FontSize="16" FontAttributes="Bold" TextColor="Black" Margin="0,0,0,20"/>
+                    <Label Text="Estatura" FontSize="20" FontAttributes="Bold"/>
+                    <Label Text="X.XX m" FontSize="16" TextColor="Black" FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Contactos de emergencia" TextColor="Black" FontAttributes="Bold" FontSize="20" Padding="20,20,0,0"/>
+            <Frame>
+                <StackLayout>
+                    
+                </StackLayout>
+            </Frame>
+            <Label Text="Al usar Emergencia SOS para llamar a los servicios de emergencia,
+también se enviará un mensaje con tu ubicación actual a tus contactos de emergencia con un numero de celular"
+                   FontSize="16" FontAttributes="Bold" Padding="20,0,8,0"/>
+            <Label Text="Acceso de emergencia" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="20,0,0,0"/>
+            <Frame>
+                <StackLayout>
+                    <Label Text="Mostrar en pantalla bloqueada" FontAttributes="Bold" FontSize="20"/>
+                    <Label Text="Sin definir" FontSize="24" FontAttributes="Bold" TextColor="Black" Padding="0"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Puedes ver tu ficha médica cuando el Android está bloqueado al tocar Emergencia y luego Ficha médica." Padding="20,0,8,50"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

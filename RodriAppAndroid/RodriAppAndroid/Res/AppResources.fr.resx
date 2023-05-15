@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aceptaría los Terminos y Condiciones" xml:space="preserve">
+    <value>J'accepterais les Termes et Conditions</value>
+  </data>
+  <data name="Al hacer click en" xml:space="preserve">
+    <value>En cliquant sur</value>
+  </data>
+  <data name="Apellido" xml:space="preserve">
+    <value>Le nom</value>
+  </data>
+  <data name="Aplicaciones" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="Bienvenido a Healthy" xml:space="preserve">
+    <value>Bienvenue à Healthy</value>
+  </data>
+  <data name="Características" xml:space="preserve">
+    <value>Caractéristiques</value>
+  </data>
+  <data name="Cerrar sesión" xml:space="preserve">
+    <value>Fermer la session</value>
+  </data>
+  <data name="Comparte datos de Salud" xml:space="preserve">
+    <value>Partager les données de santé</value>
+  </data>
+  <data name="Comparte tus datos de Healthy con familiares y amigos de forma segura para mantenerlos al tanto de tu estado de salud." xml:space="preserve">
+    <value>Partagez vos données de santé avec votre famille et vos amis en toute sécurité pour les tenir au courant de votre état de santé.</value>
+  </data>
+  <data name="Compartir" xml:space="preserve">
+    <value>Partager</value>
+  </data>
+  <data name="Compartir con alguien" xml:space="preserve">
+    <value>Partager avec quelqu'un</value>
+  </data>
+  <data name="Contraseña" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="Correo Electrónico" xml:space="preserve">
+    <value>Courrier électronique</value>
+  </data>
+  <data name="Dispositivos" xml:space="preserve">
+    <value>Dispositifs</value>
+  </data>
+  <data name="Escala Fitzpatrick" xml:space="preserve">
+    <value>Échelle de fitzpatrick</value>
+  </data>
+  <data name="Estudios de investigación" xml:space="preserve">
+    <value>Études de recherche</value>
+  </data>
+  <data name="Expediente clínico" xml:space="preserve">
+    <value>Antécédents médicaux</value>
+  </data>
+  <data name="Explorar" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="Expórtar todos los datos" xml:space="preserve">
+    <value>Exporter toutes les données</value>
+  </data>
+  <data name="Fecha de Nacimiento" xml:space="preserve">
+    <value>Date de naissance</value>
+  </data>
+  <data name="Ficha médica" xml:space="preserve">
+    <value>Dossier médical</value>
+  </data>
+  <data name="Grupo Sanguíneo" xml:space="preserve">
+    <value>Groupe sanguin</value>
+  </data>
+  <data name="Hacer ECG" xml:space="preserve">
+    <value>Faire un ECG</value>
+  </data>
+  <data name="Ingresar con Gmail" xml:space="preserve">
+    <value>Connectez-vous avec Gmail</value>
+  </data>
+  <data name="Ingrese número" xml:space="preserve">
+    <value>Entrer un nombre</value>
+  </data>
+  <data name="Lista de control de Salud" xml:space="preserve">
+    <value>Liste de vérification de la santé</value>
+  </data>
+  <data name="Los datos que compartas se mostrarán en su app Healthy y pueden recibir notificaciones si hay alguna actualización." xml:space="preserve">
+    <value>Les données que vous partagez avec eux apparaîtront dans leur application Santé. En outre, ils peuvent recevoir des notifications s'il y a des mises à jour.</value>
+  </data>
+  <data name="Nombres" xml:space="preserve">
+    <value>Des noms</value>
+  </data>
+  <data name="Notificaciones" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Porfil</value>
+  </data>
+  <data name="Perfil de salud" xml:space="preserve">
+    <value>Profil de santé</value>
+  </data>
+  <data name="Privacidad" xml:space="preserve">
+    <value>Confidentialité</value>
+  </data>
+  <data name="Privacidad y seguridad" xml:space="preserve">
+    <value>Confidentialité et sécurité</value>
+  </data>
+  <data name="Registrarse" xml:space="preserve">
+    <value>Enregistrement</value>
+  </data>
+  <data name="Registrese en Healthy" xml:space="preserve">
+    <value>Inscrivez-vous à Healthy</value>
+  </data>
+  <data name="Resumen" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="Se comparte un resumen de cada tema pero no los detalles y la información está encriptada pero puedes dejar de compartirla en cualquier momento." xml:space="preserve">
+    <value>Un résumé de chaque sujet est partagé mais pas les détails et les informations sont cryptées mais vous pouvez arrêter de les partager à tout moment.</value>
+  </data>
+  <data name="Sexo" xml:space="preserve">
+    <value>Sexe</value>
+  </data>
+  <data name="Tablero y notificaciones" xml:space="preserve">
+    <value>Tableau de bord et notifications</value>
+  </data>
+  <data name="Tus datos se encriptan en tu dispositivo y solamente se comparten con tu permiso" xml:space="preserve">
+    <value>Vos données sont cryptées sur votre appareil et ne sont partagées qu'avec votre permission</value>
+  </data>
+  <data name="Términos y Condiciones" xml:space="preserve">
+    <value>Termes et conditions</value>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="Vos tenes el control" xml:space="preserve">
+    <value>Vous avez le contrôle</value>
+  </data>
+  <data name="¿Ha olvidado su contraseña?" xml:space="preserve">
+    <value>Avez-vous oublié votre mot de passe?</value>
+  </data>
+  <data name="¿No tiene cuenta? Registrarse" xml:space="preserve">
+    <value>Vous n'avez pas de compte ? Enregistrement</value>
+  </data>
+</root>

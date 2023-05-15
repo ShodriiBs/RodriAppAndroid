@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.MisDatosMedicos"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" Margin="30,80,30,80">
+            <Label Text="Antecedentes personales" TextColor="Black" HorizontalTextAlignment="Center"/>
+            <Label Text="Seleccione si tuvo o tiene alguno de los siguientes trastornos" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <StackLayout Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Diabetes" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiDiabetes" Clicked="SiDiabetes_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoDiabetes" Clicked="NoDiabetes_Clicked" 
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Usa insulina" TextColor="Black" VerticalTextAlignment="Center" IsVisible="false" x:Name="Insu"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" IsVisible="false" x:Name="SiInsu" Clicked="SiInsu_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" IsVisible="false" x:Name="NoInsu" Clicked="NoInsu_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Resistencia a la insulina" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiResInsu" Clicked="SiResInsu_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoResInsu" Clicked="NoResInsu_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Hipertensión arterial" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiHipertension" Clicked="SiHipertension_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoHipertension" Clicked="NoHipertension_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Infarto agudo de moicardio" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiInfarto" Clicked="SiInfarto_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoInfarto" Clicked="NoInfarto_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Angioplastia (con o sin colocación de stent)" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiAngio" Clicked="SiAngio_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoAngio" Clicked="NoAngio_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Arritmias cardíacas" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiArritmia" Clicked="SiArritmia_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoArritmia" Clicked="NoArritmia_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" x:Name="Arritmias0" IsVisible="false">
+                <Button Text="Fibrilación auricular" TextColor="Black" x:Name="SiFibrilación" Clicked="SiFibrilación_Clicked"
+                         WidthRequest="90" TextTransform="None" BackgroundColor="LightPink"/>
+                <Button Text="Extrasístoles" TextColor="Black" x:Name="SiExtra" Clicked="SiExtra_Clicked"
+                         WidthRequest="110" TextTransform="None" BackgroundColor="LightPink"/>
+                <Button Text="Taquicardia paroxística supraventricular" TextColor="Black" x:Name="SiTaquicardia" Clicked="SiTaquicardia_Clicked"
+                         WidthRequest="130" TextTransform="None" BackgroundColor="LightPink"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" x:Name="Arritmias1" IsVisible="false">
+                <Button Text="Bloqueo" TextColor="Black" x:Name="SiBloqueo" Clicked="SiBloqueo_Clicked"
+                        WidthRequest="80" TextTransform="None" BackgroundColor="LightPink"/>
+                <Button Text="Otros" TextColor="Black" x:Name="SiOtros" Clicked="SiOtros_Clicked"
+                        WidthRequest="80" TextTransform="None" BackgroundColor="LightPink"/>
+                <Button Text="Cancelar" TextColor="Black" x:Name="SiCancelar" Clicked="SiCancelar_Clicked"
+                        WidthRequest="80" TextTransform="None" BackgroundColor="LightPink"/>
+            </StackLayout>
+
+            <Entry Placeholder="Describa" BackgroundColor="#eeeeee" PlaceholderColor="#aaaaaa"
+                   IsVisible="false" x:Name="Describa"/>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Marcapasos" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiMarcaPasos" Clicked="SiMarcaPasos_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoMarcaPasos" Clicked="NoMarcaPasos_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Angina de pecho" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiAngina" Clicked="SiAngina_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoAngina" Clicked="NoAngina_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Cirugía cardíaca" TextColor="Black" VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button Text="Sí" TextColor="Black" x:Name="SiCirugia" Clicked="SiCirugia_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                    <Button Text="No" TextColor="Black" x:Name="NoCirugia" Clicked="NoCirugia_Clicked"
+                            WidthRequest="50" BackgroundColor="#EEEEEE"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Button Text="De válvula" TextColor="Black" x:Name="SiValvula" Clicked="SiValvula_Clicked"
+                        WidthRequest="80" TextTransform="None" BackgroundColor="LightPink" IsVisible="false"/>
+                <Button Text="Bypass Cardíaco" TextColor="Black" x:Name="SiBypass" Clicked="SiBypass_Clicked"
+                        WidthRequest="90" TextTransform="None" BackgroundColor="LightPink" IsVisible="false"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.HealthyUtil"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="White">
+        <Label Text="¿Para que nos sirve Healthy?" TextColor="Black"
+               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Margin="0,80,0,0" FontSize="20"/>
+        <Label Text="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+               TextColor="Black" Margin="24,0" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Esperamos que te haya sido de utilidad la información proporcionada. En caso contrario, no dudes en comunicarte con soporte."
+               TextColor="Black" HorizontalTextAlignment="Center" Margin="24,12,24,0"/>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="¡Gracias por ser parte de Healthy!" TextColor="Black" />
+            <Image Source="corazonColor.png" WidthRequest="20" HeightRequest="20"/>
+        </StackLayout>
+
+            <Button Text="Volver al menú anterior" TextColor="Black" BackgroundColor="#4ABFA7"
+                    x:Name="menuAnterior" Clicked="menuAnterior_Clicked" Margin="20,10,20,8"
+                    CornerRadius="10" TextTransform="None" FontSize="16" FontAttributes="Bold"/>
+
+            <Button Text="Ir al menú principal" TextColor="Black" BackgroundColor="#4ABFA7"
+                    x:Name="menuPrincipal" Clicked="menuPrincipal_Clicked" TextTransform="None"
+                    FontSize="16" FontAttributes="Bold" CornerRadius="10" Margin="20,0,20,0"/>
+        </StackLayout>
+</ContentPage>

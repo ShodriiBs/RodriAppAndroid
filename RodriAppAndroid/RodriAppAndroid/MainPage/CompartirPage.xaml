@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.CompartirPage"
+             xmlns:translator="clr-namespace:RodriAppAndroid.Extensiones"
+             Title="{translator:Traducciones Compartir}"
+             IconImageSource="compartirImageIcon.png"
+             BackgroundColor="#EEEEEE"
+             >
+    
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE" VerticalOptions="Center">
+    <Frame Margin="10,20,10,0" CornerRadius="10">
+        <StackLayout>
+                <Image Source="compartirImage.png" HorizontalOptions="Center" WidthRequest="60" HeightRequest="60"/>
+                    <Label Text="{translator:Traducciones Comparte tus datos}" FontSize="24" TextColor="Black" HorizontalOptions="Center"/>
+            </StackLayout>
+    </Frame>
+        <Frame Margin="10,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="280"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Image Source="encuesta.png"
+                       Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
+                    <Label Text="{translator:Traducciones Vos tenes el control}" FontAttributes="Bold" TextColor="Black"
+                   Grid.Row="0" Grid.Column="1" FontSize="16" HorizontalTextAlignment="Center"/>
+                    <Label Text='{translator:Traducciones Comparte tus datos de Healthy con tus médicos asignados de forma segura para mantenerlos al tanto de tu estado de salud.}' 
+                   TextColor="Black" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+            </Grid>
+        </Frame>
+        
+        <Frame Margin="10,-5,10,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="280"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                
+                <Image Source="correo.png" WidthRequest="75"
+                       Grid.Column="0" Grid.Row="1" HorizontalOptions="Start" VerticalOptions="Start"/>
+                    <Label Text="{translator:Traducciones Envío de información}" FontAttributes="Bold" TextColor="Black"
+                            Grid.Row="0" Grid.Column="1" FontSize="16" HorizontalTextAlignment="Center"/>
+                    <Label Text="{translator:Traducciones Podés interactuar con tu médico a través de correo electrónico ¡Estate atento a su respuesta!}"
+                           TextColor="Black" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+            </Grid>
+        </Frame>
+            <Frame Margin="10,-5,10,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="280"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/345/345535.png"
+                           Grid.Column="0" Grid.Row="1" HorizontalOptions="Start" VerticalOptions="Start"/>
+                    <Label Text="{translator:Traducciones Privacidad y seguridad}" FontAttributes="Bold" TextColor="Black"
+                           Grid.Row="0" Grid.Column="1" FontSize="16" HorizontalTextAlignment="Center"/>
+                    <Label Text="{translator:Traducciones La información que compartas es de suma confiencialidad entre tu médico y vos. No te reserves y explayate ¡Te vamos a leer!}"
+                           TextColor="Black" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                </Grid>
+            </Frame>
+
+            <Label Text='Para agregar, modificar o eliminar el destinatario de la información que se va a compartir, vaya a la pantalla "Explorar" y seleccione "Mi médico"'
+                   TextColor="Black" HorizontalTextAlignment="Center" Margin="10,0"/>
+
+            <Button Text="{translator:Traducciones Compartir datos por correo}" BackgroundColor="#007FFF"
+                    CornerRadius="10" Margin="30,0"
+                    x:Name="btnCompartirCorreo" Clicked="btnCompartirCorreo_Clicked"/>
+            <Button Text="Compartir datos por Whatsapp" BackgroundColor="#25D366" CornerRadius="10" Margin="30,0"
+                    x:Name="btnCompartirWpp" Clicked="btnCompartirWpp_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

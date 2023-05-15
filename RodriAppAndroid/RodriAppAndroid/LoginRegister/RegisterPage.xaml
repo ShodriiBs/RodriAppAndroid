@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.RegisterPage"
+             xmlns:translator="clr-namespace:RodriAppAndroid.Extensiones"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#4ABFA7"
+             >
+    <ScrollView>
+        <StackLayout BackgroundColor="#4ABFA7" VerticalOptions="Center" Margin="20,72">
+
+            <Label Text="{translator:Traducciones Registrese en Hearty}" 
+                   TextColor="White" FontSize="36"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <Label Text="{translator:Traducciones Nombres*}" TextColor="White"/>
+            <Entry BackgroundColor="#D6D5D5" x:Name="Nombres" TextColor="Black"/>
+            
+            <Label Text="{translator:Traducciones Apellido*}" TextColor="White"/>
+            <Entry BackgroundColor="#D6D5D5" x:Name="Apellidos" TextColor="Black"/>
+            
+            <Label Text="{translator:Traducciones Fecha de Nacimiento*}" TextColor="White"/>
+            <DatePicker x:Name="dp" MaximumDate="2022/12/31" MinimumDate="1920/12/31" 
+                        BackgroundColor="#D6D5D5" TextColor="Black"/>
+
+            <Label Text="{translator:Traducciones Sexo*}" TextColor="White"/>
+            <Picker BackgroundColor="#D6D5D5" TextColor="Black" x:Name="Picker">
+                <Picker.Items>
+                    <x:String>Masculino</x:String>
+                    <x:String>Femenino</x:String>
+                    <x:String>No Binario</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="{translator:Traducciones Grupo Sanguíneo}" TextColor="White"/>
+            <Entry BackgroundColor="#D6D5D5" x:Name="Sangre" TextColor="Black"/>
+            
+            <Label Text="{translator:Traducciones Correo electrónico*}" TextColor="White"/>
+            <Entry BackgroundColor="#D6D5D5" x:Name="Usuario" TextColor="Black" Keyboard="Email"/>
+            
+            <Label Text="{translator:Traducciones Contraseña*}" TextColor="White" />
+            <Entry IsPassword="True" BackgroundColor="#D6D5D5" x:Name="Contraseña" TextColor="Black"/>
+            
+            <Label Text='{translator:Traducciones Al hacer click en REGISTRARSE aceptaría los términos y condiciones}'
+                       TextColor="White" FontSize="10"/>
+            <Button Text="{translator:Traducciones Términos y Condiciones}" HorizontalOptions="End" TextTransform="None"
+                    x:Name="btnTerminos" Clicked="btnTerminos_Clicked" />
+            <Label Text="(*) Campos Obligatorios" TextColor="White"/>
+            <Button Text="{translator:Traducciones Registrarse}" TextColor="White" BackgroundColor="Black" 
+                    x:Name="btnRegistro" Clicked="btnRegistro_Clicked" FontSize="18" TextTransform="None"
+                    CornerRadius="10"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

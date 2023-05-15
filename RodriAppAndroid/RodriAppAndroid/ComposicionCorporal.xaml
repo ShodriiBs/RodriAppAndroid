@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.ComposicionCorporal"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#eeeeee">
+    <StackLayout VerticalOptions="Center" Margin="15,0">
+        
+        <Label Text="Calcule su Composición corporal" TextColor="Black" HorizontalTextAlignment="Center"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Peso (en Kg)" TextColor="Black" Grid.Column="0" Grid.Row="0"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry BackgroundColor="White" TextColor="Black" x:Name="peso"
+                       Grid.Column="0" Grid.Row="1" Keyboard="Numeric"/>
+
+            <Label Text="Altura (en metros)" TextColor="Black" Grid.Column="1" Grid.Row="0"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry BackgroundColor="White" TextColor="Black" x:Name="altura" Placeholder="Ej: 1.75"
+                       Grid.Column="1" Grid.Row="1" Keyboard="Numeric" PlaceholderColor="#bbbbbb"/>
+        </Grid>
+
+        <Button Text="Calcular composición corporal" CornerRadius="10" BackgroundColor="LightBlue" TextColor="Black"
+                x:Name="CalcularIMC" Clicked="CalcularIMC_Clicked"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="IMC:" TextColor="Black"/>
+            <Label x:Name="ResultadoIMC" TextColor="Black"/>
+        </StackLayout>
+
+        <Label Text="Descripcion:" TextColor="Black"/>
+        <Label x:Name="DescripcionIMC" TextColor="Black"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.UbicacionPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    
+    <StackLayout BackgroundColor="White" VerticalOptions="Center" Margin="16,0">
+
+        <Label Text="Bienvenido a tu ubicación geográfica" TextColor="Black" HorizontalTextAlignment="Center"
+               FontSize="16" Margin="0,0,0,16"/>
+
+        <Label Text='Si activa la geolocalización, en caso de emergencias, se lo podrá derivar al centro de salud más cercano'
+               TextColor="Black" HorizontalTextAlignment="Center"/>
+        <Label Text='Para ver tus coordenadas o si te moves usando la aplicación, apreta en el botón "Actualizar Coordenadas" para tener tu última ubicación.'
+               TextColor="Black" HorizontalTextAlignment="Center"/>
+        <Button Text="Actualizar coordenadas" BackgroundColor="LightBlue" TextColor="Black" TextTransform="None" FontSize="16"
+                x:Name="coordenadas" Clicked="coordenadas_Clicked" HorizontalOptions="Center" CornerRadius="10"/>
+        <Button Text="Mostrar mapa" BackgroundColor="LightGreen" TextColor="Black" TextTransform="None" FontSize="16"
+                x:Name="btnGPS" Clicked="btnGPS_Clicked" HorizontalOptions="Center" CornerRadius="10"/>
+        <Label x:Name="lat" TextColor="White"/>
+        <Label x:Name="lon" TextColor="White" />
+    </StackLayout>
+</ContentPage>

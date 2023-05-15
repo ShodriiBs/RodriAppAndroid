@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.infoListaControl_UserPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE">
+            <Grid Margin="0,8,0,0">
+
+                <Button Text="Volver" HorizontalOptions="Start"
+                        Background="#EEEEEE" WidthRequest="90" HeightRequest="40"
+                    x:Name="btnVolver" TextColor="Black"
+                    Clicked="btnVolver_Clicked" 
+                        Grid.Row="0" Grid.Column="0">
+                </Button>
+            </Grid>
+            <Image Source="lupaListaControl.png"
+                   WidthRequest="40" HeightRequest="40" BackgroundColor="Black" Margin="175,0"/>
+            <Label Text="Lista de control de Salud" HorizontalOptions="Center" TextColor="Black" FontSize="24"/>
+            <Label Text="Configura tu Android para que esté al tanto de vos." HorizontalOptions="Center" TextColor="Black" FontSize="14" Padding="40,0"/>
+            <Label Text='Lo siguiente refleja la configuracion de "Android de User".' HorizontalOptions="Center" FontSize="12" Padding="40,0"/>
+            <Label Text="Inactivas" Padding="10,10,10,0" FontSize="20" TextColor="Black"/>
+            <Button Text="Notificaciones de audífonos"/>
+            <Label Text="Activas" Padding="10,10,10,0" FontSize="20" TextColor="Black"/>
+            <Button Text="Ficha Medica"/>
+            <Button Text="Emergencia SOS"/>
+            <Button Text="Notificaciones de estabilidad al caminar"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

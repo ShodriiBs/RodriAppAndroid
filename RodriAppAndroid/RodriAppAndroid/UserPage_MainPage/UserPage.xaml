@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RodriAppAndroid.UserPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:translator="clr-namespace:RodriAppAndroid.Extensiones"
+             BackgroundColor="#EEEEEE"
+             Title="Usuario"
+             IconImageSource="UserBar.png">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#EEEEEE" Padding="10,0,10,35" VerticalOptions="Center">
+
+            <ImageButton Source="userImage.png" CornerRadius="180" Margin="141,0" BackgroundColor="#EEEEEE"
+                   VerticalOptions="Center" WidthRequest="90" HeightRequest="90" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="User Name" FontSize="36" FontAttributes="Bold"
+                       TextColor="Black" HorizontalOptions="Center" Margin="0,16,0,16"/>
+            </StackLayout>
+
+            <Button Margin="10,0,10,0" CornerRadius="10" BackgroundColor="White"
+                Text="{translator:Traducciones Perfil de Hearty}" TextColor="Black" TextTransform="None" FontSize="18" FontAttributes="Bold"
+                    x:Name="btnPerfilSalud" Clicked="btnPerfilSalud_Clicked"/>
+
+            <Button Text="{translator:Traducciones Ficha médica}" CornerRadius="10" TextColor="Black"
+                BackgroundColor="White" TextTransform="None"
+                Margin="10,0,10,0" FontSize="18" FontAttributes="Bold"
+                x:Name="btnFichaMedica" Clicked="btnFichaMedica_Clicked"/>
+
+            <Button Text="{translator:Traducciones Cerrar sesión}" CornerRadius="10" TextColor="Black"
+                BackgroundColor="White" TextTransform="None"
+                 FontSize="18" FontAttributes="Bold"
+                Margin="10,0,10,0"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
